@@ -1,7 +1,8 @@
 import Image from "next/image";
 
 
-export default function UpcomingBirthday({props}){
+export default function Birthday({props}){
+    console.log(props)
     const {name,image,birthday}=props;
    return(<>
    <div className=" p-2 max-w-sm mx-auto my-5 bg-white rounded-xl shadow-lg flex items-center space-x-4">

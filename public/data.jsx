@@ -1,6 +1,6 @@
 export default [{
     name:"Dwight Schrute",
-    birthday:"1994-03-25",
+    birthday:"1994-03-02",
     image:"/images/barun.jpg"
 
 },{

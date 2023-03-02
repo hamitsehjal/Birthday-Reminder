@@ -3,7 +3,8 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import info from '@/public/data.jsx'
-import Birthday from '@/components/UpcomingBirthday'
+import Birthday from '@/components/Birthday'
+import Today from '@/components/Today'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -14,7 +15,7 @@ export default function Home() {
         <div className='w-1/2'>
           <h1 className="mt-4 text-3xl font-bold text-gray-800 mb-4 text-center">Today's Occasions</h1>
 
-          {info.map((person, index) => (<Birthday props={person} />))}
+          {info.map((person, index) => (<Today props={person} />))}
 
         </div>
         <div className='w-1/2'>
