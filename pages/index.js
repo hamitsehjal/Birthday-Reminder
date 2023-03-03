@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import info from '@/public/data.jsx'
 import Birthday from '@/components/Birthday'
+import Upcoming from '@/components/Upcoming'
 import { useState } from 'react'
 const inter = Inter({ subsets: ['latin'] })
 
@@ -58,20 +59,18 @@ export default function Home() {
 
   }
 
-
+  const [upcoming, setUpcoming] = useState(upcomingBirthdays)
   return (
     <>
-      <div className='flex'>
-        <div className='w-1/2'>
-          <h1 className="mt-4 text-3xl font-bold text-gray-800 mb-4 text-center">Today's Occasions</h1>
-
+      <div className='flex flex-col lg:flex-row items-center'>
+        <div className='w-1/2 mx-auto'>
+          <h1 className="mt-4 p-4 text-6xl font-bold font-serif text-yellow-500 mb-4 text-center">Today's Occasions</h1>
           {todayBirthdays.map((person, index) => (<Birthday key={person.id} props={person} />))}
-
         </div>
-        <div className='w-1/2'>
-          <h1 className="mt-4  text-3xl font-bold text-gray-800 mb-4 text-center">Upcoming Birthday</h1>
-          {upcomingBirthdays.map((person, index) => (<Birthday key={person.id} props={person} />))}
-          <button onClick={(e) => setPeople([])}>click me</button>
+        <div className='flex flex-col w-1/2 mx-auto'>
+          <h1 className="mt-2 p-4 text-3xl font-bold text-yellow-700 mb-4 text-center">Upcoming Birthdays</h1>
+          {upcoming.map((person, index) => (<Upcoming key={person.id} props={person} />))}
+          <button className="bg-yellow-700 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded mx-auto font-sans my-3" onClick={(e) => setUpcoming([])}>Clear Upcoming Reminders</button>
 
         </div>
       </div>

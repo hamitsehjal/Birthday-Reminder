@@ -1,13 +1,13 @@
 export default [{
     id:"1",
     name:"Dwight Schrute",
-    birthday:"1994-03-02",
+    birthday:"1994-03-03",
     image:"/images/barun.jpg"
 
 },{
     id:"2",
     name:"Pamela Beesly",
-    birthday:"1994-03-25",
+    birthday:"1994-03-03",
     image:"/images/andrew.jpg" 
 },
 {
@@ -19,5 +19,11 @@ export default [{
     id:"4",
     name:"Dwight Schrute",
     birthday:"1997-05-19",
+    image:"/images/angela.jpg"
+},
+{
+    id:"5",
+    name:"Dwight Schrute",
+    birthday:"1997-05-17",
     image:"/images/angela.jpg"
 }]

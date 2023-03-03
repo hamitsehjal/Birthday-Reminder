@@ -12,7 +12,7 @@ module.exports = {
 
     extend: {
       colors: {
-        'metal': "#581c87"
+        'metal': "#d1d5db"
       },
     },
   },
