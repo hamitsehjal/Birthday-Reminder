@@ -9,7 +9,7 @@ This is a birthday reminder app built using React, Next.js, and Tailwind CSS. Wi
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-## Check my project here: [My-Project](https://birthday-reminder-4qh2q83cc-hamitsehjal.vercel.app/)
+## Check my project here: [Birthday-Reminder](https://birthday-reminder-4qh2q83cc-hamitsehjal.vercel.app/)
 ## Getting Started
 
 First, run the development server:
